@@ -1,0 +1,7 @@
+[Unit]
+Description=fp_update
+
+[Service]
+Type=simple
+WorkingDirectory=/home/luca/fairphone_mirrors/
+ExecStart=/home/luca/fairphone_mirrors/update_all.sh
