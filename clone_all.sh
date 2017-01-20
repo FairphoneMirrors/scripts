@@ -19,7 +19,7 @@ for repo in ${!repos[@]}; do
     # Clone
     if [ ! -d $repo ]; then
         git clone --mirror http://code.fairphone.com/gerrit/fp2-dev/$value $repo
-        git remote add github git@$ssh.github.com:FairphoneMirrors/$repo.git
+        git -C $repo remote add github git@$ssh.github.com:FairphoneMirrors/$repo.git
     fi
     # SSH entry
     if ! grep -q $ssh.github.com ~/.ssh/config; then

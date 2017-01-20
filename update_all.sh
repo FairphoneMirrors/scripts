@@ -1,11 +1,9 @@
 #!/bin/bash
 
-for D in *; do
-    if [ -d "${D}" ]; then
-        cd "${D}"
-        echo "${D}"
-        git fetch -p origin
-        git push --mirror github
-        cd ..
-    fi
+for dir in */; do
+    cd "$dir"
+    echo "$dir"
+    git fetch -p origin
+    git push --mirror github
+    cd ..
 done
