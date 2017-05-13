@@ -13,6 +13,7 @@ declare -A repos=(
     ["android_packages_apps_FairphoneLauncher3"]="platform/packages/apps/FairphoneLauncher3"
     ["android_packages_apps_MyContactsWidget"]="platform/packages/apps/MyContactsWidget"
     ["android_packages_apps_ClockWidget"]="platform/packages/apps/ClockWidget"
+    ["android_frameworks_base"]="platform/frameworks/base"
     )
 
 for repo in ${!repos[@]}; do
