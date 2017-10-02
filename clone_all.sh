@@ -13,6 +13,9 @@ declare -A repos=(
     ["android_packages_apps_FairphoneLauncher3"]="platform/packages/apps/FairphoneLauncher3"
     ["android_packages_apps_MyContactsWidget"]="platform/packages/apps/MyContactsWidget"
     ["android_packages_apps_ClockWidget"]="platform/packages/apps/ClockWidget"
+    ["android_packages_apps_ProximitySensor"]="vendor/fairphone/packages/apps/ProximitySensor"
+    ["android_packages_apps_CameraSwapInfo"]="vendor/fairphone/moduledetect/packages/apps/CameraSwapInfo"
+    ["android_packages_apps_ModuleDetect"]="vendor/fairphone/moduledetect/packages/apps/moduledetect"
     ["android_frameworks_base"]="platform/frameworks/base"
     )
 
