@@ -17,6 +17,7 @@ declare -A repos=(
     ["android_packages_apps_CameraSwapInfo"]="vendor/fairphone/moduledetect/packages/apps/CameraSwapInfo"
     ["android_packages_apps_ModuleDetect"]="vendor/fairphone/moduledetect/packages/apps/moduledetect"
     ["android_frameworks_base"]="platform/frameworks/base"
+    ["android_vendor_fairphone_FP2"]="vendor/fairphone/fp2"
     )
 
 for repo in ${!repos[@]}; do
