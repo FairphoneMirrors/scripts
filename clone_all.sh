@@ -18,6 +18,7 @@ declare -A repos=(
     ["android_packages_apps_ModuleDetect"]="vendor/fairphone/moduledetect/packages/apps/moduledetect"
     ["android_frameworks_base"]="platform/frameworks/base"
     ["android_vendor_fairphone_FP2"]="vendor/fairphone/fp2"
+    ["android_vendor_fairphone_frameworks_common"]="vendor/fairphone/frameworks/common"
     )
 
 for repo in ${!repos[@]}; do
@@ -25,7 +26,7 @@ for repo in ${!repos[@]}; do
     echo "Processing: $repo - $value"
     # Clone
     if [ ! -d $repo ]; then
-        git clone --mirror http://code.fairphone.com/gerrit/fp2-dev/$value $repo
+        git clone --mirror https://code.fairphone.com/gerrit/fp2-dev/$value $repo
         git -C $repo remote add github git@github.com:FairphoneMirrors/$repo.git
     fi
 done
